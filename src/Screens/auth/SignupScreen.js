@@ -27,6 +27,7 @@ const SignupScreen = () => {
                                 backgroundColor: '#ededed'
                             }}
                             value={name}
+                            onChangeText={(val)=>setName(val)}
                         />
                     </View>
                     <View style={{ margin: 5 }}>
@@ -39,6 +40,7 @@ const SignupScreen = () => {
                                 backgroundColor: '#ededed'
                             }}
                             value={email}
+                            onChangeText={(val)=>setEmail(val)}
                         />
                     </View>
                     <View style={{ margin: 5 }}>
@@ -51,6 +53,7 @@ const SignupScreen = () => {
                                 backgroundColor: '#ededed'
                             }}
                             value={password}
+                            onChangeText={(val)=>setPassword(val)}
                         />
                     </View>
                     {/* <TouchableOpacity onPress={() => navigation.navigate('ForgetPass')} style={{ alignItems: 'flex-end', marginEnd: 10 }}>

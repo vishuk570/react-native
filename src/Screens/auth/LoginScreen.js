@@ -26,6 +26,7 @@ const LoginScreen = () => {
                     backgroundColor:'#ededed'
                   }}
                   value={email}
+                  onChangeText={(val)=>setEmail(val)}
                 />
               </View>
               <View style={{margin:10}}>
@@ -38,9 +39,12 @@ const LoginScreen = () => {
                     backgroundColor:'#ededed'
                   }}
                   value={password}
+                  onChangeText={(val)=>setPassword(val)}
+                  passwordRules={'password'}
+                  
                 />
               </View>
-              <TouchableOpacity onPress={()=>navigation.navigate('ForgetPass')}  style={{alignItems:'flex-end',marginEnd:10}}>
+              <TouchableOpacity onPress={()=>navigation.navigate('ForgetPass')}  style={{alignItems:'flex-end',marginEnd:10,marginBottom:5}}>
                 <Text>Forget Password?</Text>
               </TouchableOpacity>
                 <TouchableOpacity 
